@@ -65,7 +65,7 @@ class Sudoku_solver_37 {
 
         // choose most constrained blank and swap into slot k
         int idx = pickIndex(board, k);
-        swap( k, idx); // logically swap br/bc entries
+        swap(k, idx); // logically swap br/bc entries
         int tmpR = br[k], tmpC = bc[k];
         br[k] = br[idx];
         bc[k] = bc[idx];
